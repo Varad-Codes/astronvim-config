@@ -3,7 +3,10 @@
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
-  "andweeb/presence.nvim",
+  {
+    "andweeb/presence.nvim",
+    event = "VeryLazy",
+  },
   -- {
   --   "ray-x/lsp_signature.nvim",
   --   event = "BufRead",
