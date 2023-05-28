@@ -1,4 +1,14 @@
 return {
+  plugins = {
+    {
+      "goolord/alpha-nvim",
+      opts = function(_, opts)
+        opts.section.header.val = {
+          "      F4STER      ",
+        }
+      end,
+    },
+  },
   -- Configure AstroNvim updates
   updater = {
     remote = "origin",     -- remote to use
@@ -65,6 +75,8 @@ return {
       },
     },
   },
+
+
 
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so

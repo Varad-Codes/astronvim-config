@@ -25,6 +25,15 @@ return {
     event = "User AstroFile",
   },
   {
+    "ellisonleao/glow.nvim",
+    config = true,
+    cmd = "Glow",
+  },
+  {
+    "github/copilot.vim",
+    event = "VeryLazy",
+  },
+  {
     "catppuccin/nvim",
     name = "catppuccin",
     config = function()
