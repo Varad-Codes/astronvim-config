@@ -27,6 +27,10 @@ return {
   {
     "ellisonleao/glow.nvim",
     config = true,
+  { 
+    "EdenEast/nightfox.nvim",
+    event="VeryLazy",
+  },
     cmd = "Glow",
   },
   {
@@ -34,11 +38,25 @@ return {
     event = "VeryLazy",
   },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "navarasu/onedark.nvim",
     config = function()
-      require("catppuccin").setup {}
+      require("onedark").setup ({
+        style='darker',
+      })
     end,
-    event = "VeryLazy",
+    event="VeryLazy",
+  },
+  {
+    "xiyaowong/transparent.nvim",
+    name="transparent",
+    config = function()
+      require("transparent").setup ({
+        extra_groups = {
+          "NormalFloat", -- plugins which have float panel such as Lazy, Mason, LspInfo
+          "NvimTreeNormal" -- NvimTree
+        },
+      })
+    end,
+    event="VeryLazy",
   },
 }
