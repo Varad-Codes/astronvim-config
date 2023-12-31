@@ -7,6 +7,10 @@ return {
     "andweeb/presence.nvim",
     event = "VeryLazy",
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    event = "VeryLazy",
+  }
   -- {
   --   "ray-x/lsp_signature.nvim",
   --   event = "BufRead",
